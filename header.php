@@ -25,7 +25,10 @@
 <div id="page" class="container-fluid site">
 	<header id="masthead" class="site-header container-sm">
 		<div class="logo">
-			<img rel="preload" src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-azul-ai.png" alt="Logo unisantos">
+			<img
+				src="http://127.0.0.1:8081/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-azul-ai.png"
+				alt="Logo unisantos azul"
+			>
 		</div>
 		<ul>
 			<li class="active"><a href="#">a maratona</a></li>

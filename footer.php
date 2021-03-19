@@ -14,7 +14,10 @@
 	<footer id="colophon" class="site-footer">
 		<div>
 			<div class="logo">
-				<img src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-branco-ai-2.png" alt="Logo unisantos">
+				<img
+					src="http://127.0.0.1:8081/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-branco-ai.png"
+					alt="Logo unisantos branca"
+				>
 			</div>
 			<ul>
 				<li><a href="#">f</a></li>
