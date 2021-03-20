@@ -23,17 +23,28 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="container-fluid site">
-	<header id="masthead" class="site-header container-sm">
-		<div class="logo">
-			<img
-				src="http://127.0.0.1:8081/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-azul-ai.png"
-				alt="Logo unisantos azul"
-			>
-		</div>
-		<ul>
-			<li class="active"><a href="#">a maratona</a></li>
-			<li><a href="#">inscrições</a></li>
-			<li><a href="#">programação</a></li>
-			<li><a href="#">ambiente computacional</a></li>
-		</ul>
-	</header><!-- #masthead -->
+	<div class="header-bg">
+		<header id="masthead" class="site-header container-sm">
+			<div class="logo">
+				<img
+					src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-azul-ai.png"
+					alt="Logo unisantos azul"
+				>
+			</div>
+			<ul>
+				<li class="active"><a href="#">a maratona</a></li>
+				<li><a href="#">inscrições</a></li>
+				<li><a href="#">programação</a></li>
+				<li><a href="#">ambiente computacional</a></li>
+			</ul>
+		</header><!-- #masthead -->
+		<div class="subscribe">
+			<div class="image-block">
+				<img
+					src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/maratona-logo.jpg"
+					alt="Logo maratona de programação"
+				>
+			</div> <!-- .image-block -->
+			<a href="#">INSCREVA-SE</a>
+		</div> <!-- .subscribe -->
+	</div>

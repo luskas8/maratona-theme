@@ -976,6 +976,13 @@ textarea {
 /*
 	Inicio custom css
 */
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
 
 /* Page div */
 #page {
@@ -991,19 +998,27 @@ textarea {
 #masthead {
 	width: 100%;
 	max-width: 960px;
-	height: 150px;
-	max-height: 150px;
 	margin: 0 auto;
   display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
+.header-bg {
+	width: 100%;
+	height: calc((100vh / 2) - 50px);
+
+	background: url('http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/header-layer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
 #masthead > div.logo {
 	width: 12rem;
 }
 
-#masthead > div.logo img {
+img {
 	width: 100%;
 	height: 100%;
 }
@@ -1014,18 +1029,42 @@ textarea {
 	gap: 20px;
 }
 
-#masthead ul li {
-	list-style: none;
-}
-
 #masthead ul li.active a {
 	color: #7ac2ff !important;
 }
 
 #masthead ul li a {
-	text-decoration: none;
 	color: #000000;
 	font: 700 0.8rem 'Ubunto', 'sans-serif';
+}
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.subscribe .image-block {
+	max-width: 12rem;
+	max-height: 12rem;
+}
+
+.subscribe a {
+	width: 20rem;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 12px 0;
+	margin-top: 2rem;
+	border-radius: 25px;
+
+	color: #FFF;
+	font: 700 0.8rem 'Ubunto', 'sans-serif';
+
+	background: #4d44ff;
 }
 
 /* Footer */
@@ -1061,9 +1100,15 @@ textarea {
 }
 
 #colophon ul li {
-	list-style: none;
+	width: 20px;
+	height: 20px;
 }
 
 #colophon ul li a {
-	text-decoration: none;
+	color: #FFF;
+}
+
+#colophon ul li a svg {
+	width: 100%;
+	height: 100%;
 }
