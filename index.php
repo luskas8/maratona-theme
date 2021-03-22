@@ -47,13 +47,13 @@ get_header();
 				<div class="orgs-logos">
 					<div class="org-logo" id="">
 						<img
-							src="./wp-content/themes/maratona/images/icpc-logo.jpg"
+							src="./wp-content/themes/maratona-theme/images/icpc-logo.jpg"
 							alt="Logo ICPC"
 						>
 					</div>
 					<div class="org-logo" id="">
 						<img
-							src="./wp-content/themes/maratona/images/sbp-logo.jpg"
+							src="./wp-content/themes/maratona-theme/images/sbp-logo.jpg"
 							alt="Logo SBP"
 						>
 					</div>

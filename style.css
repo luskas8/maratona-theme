@@ -1096,7 +1096,7 @@ img {
 		display: inherit;
 	}
 
-  #toggle:checked ~ .toggle-container .button-toggle {
+  	#toggle:checked ~ .toggle-container .button-toggle {
 		box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 	}
 	
@@ -1125,8 +1125,7 @@ img {
 		line-height: 40px;
 		margin-top: 0;
 		opacity: 1;
-		transform: scaleY(1);
-		transition: 0.5s, opacity 0.1s;
+		transition: all 0.5s, opacity 0.1s;
 	}
 	
 	#toggle:checked ~ .nav .nav-item:nth-child(1) {
@@ -1163,6 +1162,7 @@ img {
 	
 	#toggle:checked ~ .nav .nav-item:before {
 		opacity: 0;
+		width: 100%;
 	}
 	
 	/* Toggle Button */
@@ -1207,10 +1207,12 @@ img {
 	
 	/* Menu */
 	.nav {
-		display: inline-block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		margin: 25px 25px 20px;
 		pointer-events: none;
-		transition: 0.5s;
+		transition: all 0.5s;
 	}
 	
 	.nav-item {
@@ -1219,14 +1221,26 @@ img {
 		float: left;
 		clear: both;
 		color: transparent;
-		font-size: 14px;
+		font-size: 2rem;
 		letter-spacing: -6.2px;
 		height: 7px;
 		line-height: 7px;
+		font-size: 0;
 		text-transform: uppercase;
 		white-space: nowrap;
-		transform: scaleY(0.2);
-		transition: 0.5s, opacity 1s;
+		transition: all 0.5s, opacity 1s;
+	}
+
+	a.active {
+		color: #7ac2ff !important;
+	}
+
+	#toggle:not(:checked) ~ a.active, a.active::before, a.active::after  {
+		visibility: hidden;
+	}
+	
+	#toggle:checked ~ a.active, a.active::before, a.active::after {
+		visibility: visible !important;
 	}
 	
 	.nav-item:nth-child(1) {
@@ -1279,12 +1293,12 @@ img {
 		position: absolute;
 		content: '';
 		top: 50%;
-		left: 0;
-		width: 100%;
+		left: 50%;
+		width: 2rem;
 		height: 2px;
 		background-color: #000000;
-		transform: translateY(-50%) scaleY(5);
 		transition: 0.5s;
+		transform: translateX(-50%) scale(1) !important;
 	}
 }
 

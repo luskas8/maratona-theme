@@ -15,7 +15,7 @@
 		<div>
 			<div class="logo">
 				<img
-					src="./wp-content/themes/maratona/images/unisantos-branco.png"
+					src="./wp-content/themes/maratona-theme/images/unisantos-branco.png"
 					alt="Logo unisantos branca"
 				>
 			</div>

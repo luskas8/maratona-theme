@@ -27,7 +27,7 @@
 		<header id="masthead" class="site-header container-sm">
 			<div class="logo">
 				<img
-					src="./wp-content/themes/maratona/images/unisantos-azul.png"
+					src="./wp-content/themes/maratona-theme/images/unisantos-azul.png"
 					alt="Logo unisantos azul"
 				>
 			</div>
@@ -40,10 +40,10 @@
 			</label>
 
 			<nav class="nav">
-				<a class="nav-item" href="">Dashboard</a>
-				<a class="nav-item" href="">History</a>
-				<a class="nav-item" href="">Statistics</a>
-				<a class="nav-item" href="">Settings</a>
+				<a class="nav-item active" href="">a maratona</a>
+				<a class="nav-item" href="">inscrições</a>
+				<a class="nav-item" href="">programação</a>
+				<a class="nav-item" href="">ambiente computacional</a>
 			</nav>
 
 			<ul>
@@ -56,7 +56,7 @@
 		<div class="subscribe">
 			<div class="image-block">
 				<img
-					src="./wp-content/themes/maratona/images/maratona-logo-2.png"
+					src="./wp-content/themes/maratona-theme/images/maratona-logo-2.png"
 					alt="Logo maratona de programação"
 				>
 			</div> <!-- .image-block -->
