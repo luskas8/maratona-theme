@@ -31,6 +31,21 @@
 					alt="Logo unisantos azul"
 				>
 			</div>
+
+			<input id="toggle" type="checkbox">
+
+			<label class="toggle-container" for="toggle">
+			
+				<span class="button button-toggle"></span>
+			</label>
+
+			<nav class="nav">
+				<a class="nav-item" href="">Dashboard</a>
+				<a class="nav-item" href="">History</a>
+				<a class="nav-item" href="">Statistics</a>
+				<a class="nav-item" href="">Settings</a>
+			</nav>
+
 			<ul>
 				<li class="active"><a href="#">a maratona</a></li>
 				<li><a href="#">inscrições</a></li>
