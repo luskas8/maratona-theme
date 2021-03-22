@@ -27,7 +27,7 @@
 		<header id="masthead" class="site-header container-sm">
 			<div class="logo">
 				<img
-					src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-azul-ai.png"
+					src="./wp-content/themes/maratona/images/unisantos-azul.png"
 					alt="Logo unisantos azul"
 				>
 			</div>
@@ -41,7 +41,7 @@
 		<div class="subscribe">
 			<div class="image-block">
 				<img
-					src="http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/maratona-logo.jpg"
+					src="./wp-content/themes/maratona/images/maratona-logo-2.png"
 					alt="Logo maratona de programação"
 				>
 			</div> <!-- .image-block -->

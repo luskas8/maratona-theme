@@ -386,7 +386,9 @@ template {
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+	box-sizing: border-box; /* Modificado */
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -487,7 +489,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0; /* Modificado */
 }
 
 ul {
@@ -976,12 +978,35 @@ textarea {
 /*
 	Inicio custom css
 */
+
+* {
+	font: 300 1rem 'Ubunto', 'sans-serif';
+}
+
 a {
 	text-decoration: none;
 }
 
 li {
 	list-style: none;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 479.99px) {
+  html {
+    font-size: 75.5%;
+  }
 }
 
 /* Page div */
@@ -1004,11 +1029,16 @@ li {
 	align-items: center;
 }
 
+@media (max-width: 767.98px) {
+  #masthead {
+    max-width: 720px;
+  }
+}
+
 .header-bg {
 	width: 100%;
-	height: calc((100vh / 2) - 50px);
 
-	background: url('http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/header-layer.jpg');
+	background: url('./images/header-layer.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -1035,7 +1065,31 @@ img {
 
 #masthead ul li a {
 	color: #000000;
-	font: 700 0.8rem 'Ubunto', 'sans-serif';
+	font: 700 1rem 'Ubunto', 'sans-serif';
+}
+
+@media (max-width: 767.98px) {
+  #masthead ul li a {
+    font: 700 0.7rem 'Ubunto', 'sans-serif';
+  }
+}
+
+/* MENU EXEMPLO */
+/* https://codepen.io/kirstenhumphreys/pen/vgaKmG */
+
+@media (max-width: 575.98px) {
+	#masthead {
+		flex-direction: column;
+	}
+
+	#masthead ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+  #masthead ul li a {
+    font: 700 1rem 'Ubunto', 'sans-serif';
+  }
 }
 
 .subscribe {
@@ -1067,6 +1121,134 @@ img {
 	background: #4d44ff;
 }
 
+/* Main */
+.site-main {
+	width: 100%;
+	background: #FFF !important;
+}
+
+.container-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #2d3346;
+}
+
+.site-main .content-wrapper {
+	width: 100%;
+	max-width: 960px;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+	margin: 4rem 0;
+}
+
+@media (max-width: 767.98px) {
+  .site-main .content-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 575.98px) {
+	.site-main .content-wrapper {
+		grid-template-columns: none;
+		grid-template-rows: repeat(3, 1fr);
+	}
+}
+
+.site-main .content-wrapper .line {
+	position: relative;
+}
+
+.site-main .content-wrapper .line::after {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	content: "";
+	width: 3px;
+	height: 100%;
+
+	background: #5b6174;
+}
+
+@media (max-width: 575.98px) {
+	.site-main .content-wrapper .line::after {
+		left: 10%;
+		top: 50%;
+		transform: translate(0, -50%);
+		content: "";
+		width: 80%;
+		height: 3px;
+	}
+}
+
+.site-main .content-wrapper h1 {
+	font: 700 3rem 'Ubunto', 'sans-serif';
+	margin: 0;
+}
+
+.site-main .content-wrapper h3 {
+	font: 700 1.25rem 'Ubunto', 'sans-serif';
+	margin: 0;
+}
+
+.site-main .content-wrapper p {
+	font: 300 1.25rem 'Ubunto', 'sans-serif';
+	margin: 0;
+
+	color: #cbcdd1;
+}
+
+.site-main .content-wrapper .phase h1,
+.site-main .content-wrapper .phase h3 {
+	color: #7ac2ff;
+}
+
+.site-main .content-wrapper .date h1,
+.site-main .content-wrapper .date h3 {
+	color: #ff6d3c;
+}
+
+@media (max-width: 575.98px) {
+	.site-main .content-wrapper .phase,
+	.site-main .content-wrapper .date {
+		margin: 0 auto;
+	}
+}
+
+.orgs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.orgs > div {
+	width: 100%;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.orgs h1 {
+	text-align: center;
+	color: #4e45ff;
+	font: 700 1.25rem 'Ubunto', 'sans-serif';
+}
+
+.orgs .orgs-logos {
+	display: flex;
+	gap: 1rem;
+}
+
+.org-logo {
+	width: 150px;
+	height: 100%;
+}
+
 /* Footer */
 #colophon {
 	width: 100%;
@@ -1077,9 +1259,16 @@ img {
 }
 
 #colophon > div {
-	min-width: 960px;
+	width: 100%;
+	max-width: 960px;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  #colophon > div {
+    max-width: 720px;
+  }
 }
 
 #colophon div.logo {

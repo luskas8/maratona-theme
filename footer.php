@@ -15,7 +15,7 @@
 		<div>
 			<div class="logo">
 				<img
-					src=http://127.0.0.1:8080/wordpress/wp-content/uploads/2021/03/unisantos-horizontal-branco-ai-2.png"
+					src="./wp-content/themes/maratona/images/unisantos-branco.png"
 					alt="Logo unisantos branca"
 				>
 			</div>
